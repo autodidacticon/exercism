@@ -1,8 +1,7 @@
-module Grains (grains, square, total) where
+module Grains (square, total) where
 
 square :: Integer -> Integer
-square x = 2 ^ (x - 1)
+square = (2 ^) . pred
 
-grains = map (\x -> 2 ^ x) [0..63] 
-
-total = sum grains
+total :: Integer
+total = pred $ 2 ^ 64
