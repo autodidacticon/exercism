@@ -10,7 +10,7 @@ class AnagramSpecs extends FlatSpec with Matchers {
   it should "detect simple anagrams" in {
     val detector = new Anagram("ant")
     val anagrams = detector.matches(Seq("tan", "stand", "at"))
-    anagrams should equal (Seq("tan", "at"))
+    anagrams should equal (Seq("tan"))
   }
 
   it should "detect multiple anagrams" in {
@@ -40,7 +40,7 @@ class AnagramSpecs extends FlatSpec with Matchers {
 
   it should "eliminate anagrams subsets" in {
     val detector = new Anagram("good")
-    detector.matches(Seq("dog", "goody")) should equal (Seq("dog"))
+    detector.matches(Seq("dog", "goody")) should equal (Seq())
   }
 
   it should "detect anagrams" in {

@@ -1,17 +1,26 @@
-# Bob
+# Hello World
 
-Bob is a lackadaisical teenager. In conversation, his responses are very limited.
+The classical introductory exercise. Just say "Hello, World!".
 
-Bob answers 'Sure.' if you ask him a question.
+["Hello, World!"](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program) is
+the traditional first program for beginning programming in a new language
+or environment.
 
-He answers 'Whoa, chill out!' if you yell at him.
+The objectives are simple:
 
-He answers 'Calm down, I know what I'm doing!' if you yell a question at him.
+- Write a function that returns the string "Hello, World!".
+- Run the test suite and make sure that it succeeds.
+- Submit your solution and check it at the website.
 
-He says 'Fine. Be that way!' if you address him without actually saying
-anything.
+If everything goes well, you will be ready to fetch your first real exercise.
 
-He answers 'Whatever.' to anything else.
+## Hints
+
+To complete this exercise, you need to implement the `hello` function.
+
+You will find the type signature for `hello` already in place,
+but it is up to you to define the function.
+
 
 
 ## Getting Started
@@ -68,7 +77,7 @@ one, head over there and create an issue.  We'll do our best to help you!
 
 ## Source
 
-Inspired by the 'Deaf Grandma' exercise in Chris Pine's Learn to Program tutorial. [http://pine.fm/LearnToProgram/?Chapter=06](http://pine.fm/LearnToProgram/?Chapter=06)
+This is an exercise to introduce users to using Exercism [http://en.wikipedia.org/wiki/%22Hello,_world!%22_program](http://en.wikipedia.org/wiki/%22Hello,_world!%22_program)
 
 ## Submitting Incomplete Solutions
 It's possible to submit an incomplete solution so you can see how others have completed the exercise.
