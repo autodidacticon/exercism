@@ -1,0 +1,10 @@
+Name:           bob
+Version:        1.0
+License:        BSD3
+Cabal-Version:  >= 1.9.2
+Build-Type:     Simple
+
+Test-Suite bob-test
+    type:       exitcode-stdio-1.0
+    main-is:    bob-test.hs
+    build-depends: base

@@ -12,6 +12,7 @@ patTest x y =
 
 responseFor :: String -> String
 responseFor x
-  | patTest x "[A-Z|\\ ]+" = "Whoa, chill out!"
+  | patTest x "[\\ |\\n|\\r|\\t|\\v|\\xA0|\\x2002]*" = "Fine. Be that way!"
+  | patTest x "([\\ |0-9|%|\\^|\\*|@|#|\\$|\\(|\\*|\\^|\\!|,]*[A-Z]+[\\ |0-9|%|\\^|\\*|@|#|\\$|\\(|\\*|\\^|\\!|,]*)+." = "Whoa, chill out!"
   | patTest x ".+\\?" = "Sure."
   | otherwise = "Whatever."
